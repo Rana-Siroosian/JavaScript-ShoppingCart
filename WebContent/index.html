@@ -3,83 +3,92 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Items</title>
-<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css"/>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" />
 
 </head>
 <body id="file">
-<section class="container">
-<p>
-<h2>Welcome to XBOXONE online store</h2>
-<h3>Please choose the items you want from the list below</h3>
-</p>
-<div class="item-buttons">
-<table class="table table-original">
-<thead>
-  <tr>
-    <th>Item</th>
-    <th>Price</th>
-    <th>Quantity</th>
-    <th>Purchase</th>
-  </tr>
-  <thead>
-  <tbody>
-  <tr>
-    <td>Greed Fall</td>
-    <td>$49.99</td>
-<td><input type="number" value="" id="qty" /></td>
-    <td><button class="item-purchas" name="Greed Fall" value="49.99">Add</button></td>
-  </tr>
-  <tr>
-  <td>For Honor</td>
-  <td>$11.99</td>
-<td><input type="number" value="" id="qty" /></td>  
-  <td><button class="item-purchas" name="For Honor" value="11.99">Add</button></td>
-  </tr>
-  <tr>
-  <td>Out Riders</td>
-  <td>$59.99</td>
-<td><input type="number" value="" id="qty" /></td>  
-  <td><button class="item-purchas" name="Out Riders" value="59.99">Add</button></td>
-  </tr>
-  <tr>
-  <td>Jumanji</td>
-  <td>$39.99</td>
-<td><input type="number" value="" id="qty" /></td>  
-  <td><button class="item-purchas" name="Jumanji" value="39.99">Add</button></td>
-  </tr>
-  <tr>
-  <td>Dead Rising</td>
-  <td>$11.99</td>
-      <td><input type="number" value="" id="qty" /></td>
-  
-  <td><button class="item-purchas" name="Dead Rising" value="11.99">Add</button></td>
-  </tr>
-  </tbody>
-</table>
+	<section class="container">
+		<p>
+		<h2>Welcome to XBOXONE online store</h2>
+		<h3>Please choose the items you want from the list below</h3>
+		</p>
+		<div class="item-buttons">
+			<table class="table table-original">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Purchase</th>
+					</tr>
+				<thead>
+				<tbody>
+					<tr>
+						<td>Greed Fall</td>
+						<td>$49.99</td>
+						<td><input type="number" value="" id="qty" /></td>
+						<td><button class="item-purchas" name="Greed Fall"
+								value="49.99">Add</button></td>
+					</tr>
+					<tr>
+						<td>For Honor</td>
+						<td>$11.99</td>
+						<td><input type="number" value="" id="qty" /></td>
+						<td><button class="item-purchas" name="For Honor"
+								value="11.99">Add</button></td>
+					</tr>
+					<tr>
+						<td>Out Riders</td>
+						<td>$59.99</td>
+						<td><input type="number" value="" id="qty" /></td>
+						<td><button class="item-purchas" name="Out Riders"
+								value="59.99">Add</button></td>
+					</tr>
+					<tr>
+						<td>Jumanji</td>
+						<td>$39.99</td>
+						<td><input type="number" value="" id="qty" /></td>
+						<td><button class="item-purchas" name="Jumanji" value="39.99">Add</button></td>
+					</tr>
+					<tr>
+						<td>Dead Rising</td>
+						<td>$11.99</td>
+						<td><input type="number" value="" id="qty" /></td>
+
+						<td><button class="item-purchas" name="Dead Rising"
+								value="11.99">Add</button></td>
+					</tr>
+				</tbody>
+			</table>
 
 
-<p>
-<button type="button" class="btn btn-success" id="checkOut" >Check Out</button>
+			<p>
+				<button type="button" class="btn btn-success" id="checkOut">Check
+					Out</button>
 
-</p>
-<table class="table table-original">
-<h2>Your Cart</h2>
-<thead>
-  <tr>
-    <th>Item</th>
-    <th>Price</th>
-  </tr>
-  </thead>
-  <tbody id="gameTable">
+			</p>
+			<table class="table table-original">
+				<h2>Your Cart</h2>
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody id="gameTable">
 
-		</tbody>
-	
-</table>
-<h3 id="total"></h3>
-</div>
-<div id="items"></div>
-</section>
-<script src="script.js"></script>
+				</tbody>
+
+			</table>
+			<h3 id="total"></h3>
+		</div>
+		<div id="items"></div>
+	</section>
+	<script src="script.js"></script>
 </body>
 </html>
