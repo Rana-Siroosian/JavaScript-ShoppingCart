@@ -120,7 +120,7 @@ checkOut.addEventListener("click", (event) =>{
 	}
 	let bill = document.getElementById("total");
 	let p = document.createElement("p");
-	bill.innerText = "Total is: $"+ total;
+	bill.innerText = "Your total is: $"+ total;
 	bill.appendChild(p);
 	
 	
