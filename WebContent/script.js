@@ -1,3 +1,29 @@
+let game =[
+	
+	{
+		item:'Greed Fall',
+		value:49.99,
+		qty:""
+	},
+	{
+		item:'For Honor',
+		value: 11.99
+	},
+	{
+		item: 'Out Riders',
+		value: 59.99
+	},
+	{
+		item: 'Jumanji',
+		value: 39.99
+	},
+	{
+		item: 'Dead Rising',
+		value: 11.99
+	}
+]
+
+
 let items=[];
 function getItem(item,value,Qty){
 	
@@ -9,6 +35,42 @@ function getItem(item,value,Qty){
 	console.log(items);
 	
 }
+
+
+let showChart = document.getElementById("show");
+for(let i=0;i<game.length;i++){
+	let tr = document.createElement("tr");
+	showChart.appendChild(tr);
+	
+	let td1 = document.createElement("td");
+	td1.innerText = game[i].item;
+	tr.appendChild(td1);
+	
+	let td2 = document.createElement("td");
+	td2.innerText = game[i].value;
+	tr.appendChild(td2);
+	
+	let userInput = document.createElement("input");
+// td3.innerText = game[i].qty.push(userInput);
+// let userInput = document.createElement("input");
+	let q = userInput.value;
+	console.log("qq"+q);
+// let q = parseInt(userInput);
+	console.log(game[i]);
+	tr.appendChild(userInput);
+	
+	
+	let button = document.createElement("button");
+	button.innerText = "Add";
+	tr.appendChild(button);
+	button.setAttribute("type", "button");
+// button.setAttribute("onclick", "getItem('" + game[i].item+ "', "
+// +game[i].value + ")");
+// button.setAttribute("onclick", "getItem('" + game[i].item+ "', "
+// +game[i].value + ")");
+	button.setAttribute("onclick", "getItem('"+game[i].item+"',"+game[i].value+","+q+")");
+}
+
 
 
 let buttons = document.querySelectorAll('.item-purchas')
@@ -24,7 +86,7 @@ for (let button of buttons){
 		quantity = parseInt(quantity);
 		console.log(quantity);
 		
-		getItem(itemName,parseFloat(itemValue),quantity);
+		getItem(itemName,(itemValue),quantity);
 	});
 }
 
