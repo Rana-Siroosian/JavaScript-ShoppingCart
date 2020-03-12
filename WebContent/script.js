@@ -50,15 +50,17 @@ for(let i=0;i<game.length;i++){
 	td2.innerText = game[i].value;
 	tr.appendChild(td2);
 	
-	let userInput = document.createElement("input");
-// td3.innerText = game[i].qty.push(userInput);
-// let userInput = document.createElement("input");
-	let q = userInput.value;
-	console.log("qq"+q);
-// let q = parseInt(userInput);
-	console.log(game[i]);
-	tr.appendChild(userInput);
-	
+//	let userInput = document.createElement("input");
+//	tr.appendChild(userInput);
+//	function getQty(){
+//// td3.innerText = game[i].qty.push(userInput);
+//// let userInput = document.createElement("input");
+//	let q=""; q += userInput.value;
+//	console.log("qq"+q);
+//// let q = parseInt(userInput);
+//	console.log(game[i]);
+////	tr.appendChild(userInput);
+//	}
 	
 	let button = document.createElement("button");
 	button.innerText = "Add";
@@ -68,7 +70,7 @@ for(let i=0;i<game.length;i++){
 // +game[i].value + ")");
 // button.setAttribute("onclick", "getItem('" + game[i].item+ "', "
 // +game[i].value + ")");
-	button.setAttribute("onclick", "getItem('"+game[i].item+"',"+game[i].value+","+q+")");
+	button.setAttribute("onclick", "getItem('"+game[i].item+"',"+game[i].value+")");
 }
 
 
